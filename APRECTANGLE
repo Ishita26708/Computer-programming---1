@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    clrscr();   // clear screen
+
+    float L, B, A, P;
+
+    printf("Enter the length of the rectangle: ");
+    scanf("%f", &L);
+
+    printf("Enter the breadth of the rectangle: ");
+    scanf("%f", &B);
+
+    A = L * B;           // Area
+    P = 2 * (L + B);     // Perimeter
+
+    printf("Area of Rectangle = %.2f", A);
+    printf("\nPerimeter of Rectangle = %.2f", P);
+
+    getch();   // wait for key press
+}
