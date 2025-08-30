@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    clrscr();   // clear screen
+
+    float gross, discount, net;
+
+    printf("Enter Gross Sales: ");
+    scanf("%f", &gross);
+
+    discount = (10.0 / 100.0) * gross;   // 10% discount
+    net = gross - discount;
+
+    printf("Gross Sales = %.2f", gross);
+    printf("\nDiscount (10%%) = %.2f", discount);
+    printf("\nNet Sales = %.2f", net);
+
+    getch();   // wait for key press
+}
